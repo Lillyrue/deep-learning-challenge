@@ -16,19 +16,22 @@ For this analysis, Alphabet Soup would like a tool to help identify future appli
 
 #### Compiling, Training, and Evaluating the Model
 
-* How many neurons, layers, and activation functions did you select for your neural network model, and why?
-    * In the original starter code notebook, I used 2 hidden layers, one layer containing 80 units, and the other layer containing 30 units. Both layers used relu as the activation function, and the output layer used one unit and the sigmoid activation function.  I also used 100 epochs to train the model.
-* Were you able to achieve the target model performance?
-    * I was not able to achieve the target model performance and the accuracy came down to .7293.
+##### How many neurons, layers, and activation functions did you select for your neural network model, and why?
+* In the original starter code notebook, I used 2 hidden layers, one layer containing 80 units, and the other layer containing 30 units. Both layers used relu as the activation function, and the output layer used one unit and the sigmoid activation function.  I also used 100 epochs to train the model.
+##### Were you able to achieve the target model performance?
+* I was not able to achieve the target model performance and the accuracy came down to .7293.
 
-![Original Result]("C:\Users\Lilly\Pictures\Screenshots\Screenshot 2024-02-27 200918.png")
+![Original Result](https://github.com/Lillyrue/deep-learning-challenge/blob/main/Screenshots/Screenshot%202024-02-27%20215948.png)
 
-* What steps did you take in your attempts to increase model performance?
-    * In the AlphabetSoupCharity_Optimization notebook, I optimized the model three times. In the first optimization, I increased the units in both layers, and gave an accuracy of .7290, which is a slight decrease from the original result.
-![First Optimization]("C:\Users\Lilly\Pictures\Screenshots\Screenshot 2024-02-27 200918.png")
-    * In the second optimization, I decreased the units, and I changed the activation function in the first layer to tanh, which gave an accuracy of .7272.
-![Second Optimization]("C:\Users\Lilly\Pictures\Screenshots\Screenshot 2024-02-27 200918.png")  
-    * In the last optimization, I increased the units in both layers, changed the activation function back to relu in the first layer, and increased the epochs to 150, which resulted in an accuracy of 72.98, which is a slight increase from the original result.
-![Last Optimization]("C:\Users\Lilly\Pictures\Screenshots\Screenshot 2024-02-27 200918.png")
+##### What steps did you take in your attempts to increase model performance?
+* In the AlphabetSoupCharity_Optimization notebook, I optimized the model three times. In the first optimization, I increased the units in both layers, and gave an accuracy of .7290, which is a slight decrease from the original result.
+
+![First Optimization Result](https://github.com/Lillyrue/deep-learning-challenge/blob/main/Screenshots/Screenshot%202024-02-27%20200918.png)
+* In the second optimization, I decreased the units, and I changed the activation function in the first layer to tanh, which gave an accuracy of .7272.
+
+![Second Optimization Result](https://github.com/Lillyrue/deep-learning-challenge/blob/main/Screenshots/Screenshot%202024-02-27%20200959.png) 
+* In the last optimization, I increased the units in both layers, changed the activation function back to relu in the first layer, and increased the epochs to 150, which resulted in an accuracy of .7298, which is a slight increase from the original result.
+
+![Last Optimization Result](https://github.com/Lillyrue/deep-learning-challenge/blob/main/Screenshots/Screenshot%202024-02-27%20201015.png)
 ### Summary: 
 Overall the results of the deep learning model did not achieve over 75% in accuracy.  Some recommendations for this model might be to delete more columns in the dataframe to give a higher result or adding additional data that Alphabet Soup may have that may make a difference in predicting successful applicants. What seemed to increased the result in the last optimization was to increase the units and the epochs, and in combination of deleting some columns, might result in an accuracy of over 75%.
